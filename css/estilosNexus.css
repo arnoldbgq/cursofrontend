@@ -11,3 +11,6 @@ selector {
 * {
     box-sizing: border-box;
 }
+ body {
+    background-color: #036473;
+ }  

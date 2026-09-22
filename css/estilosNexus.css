@@ -1,9 +1,10 @@
 /*
 #036473 color principal
-#036473 oscuros
-#036473 claros fondos
+#1F010F oscuros
+#E6F5F7 claros fondos
 #036473 footer
-#036473 color extra
+#036473 color complementario
+
 selector {
     propiedad: valor;
 }*/
@@ -12,5 +13,11 @@ selector {
     box-sizing: border-box;
 }
  body {
-    background-color: #d8e7e9;
+    background-color: #E6F5F7;
  }  
+header{
+    background-color: white;
+}
+ nav{
+    background-color: rgb(250, 220, 213);
+ }

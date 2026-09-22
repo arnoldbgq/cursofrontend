@@ -4,4 +4,10 @@
 #036473 claros fondos
 #036473 footer
 #036473 color extra
-*/
+selector {
+    propiedad: valor;
+}*/
+
+* {
+    box-sizing: border-box;
+}

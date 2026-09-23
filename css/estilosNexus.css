@@ -22,10 +22,12 @@ selector {
    grid-template-areas: 
    "header header"
    "nav nav"
-   "main main"
+   "main aside"
    "footer footer";
+   min-height: 100vh;
  }  
 header{
+   grid-area: header;
     background-color: white;
 }
  nav{
@@ -43,8 +45,9 @@ header{
    background-color: #F2FDFF;
  }
  aside {
-   background-color: #734703;
    color: white;
+   background-color: #734703;
+   
  }
  footer{
     background-color: #F2C680;

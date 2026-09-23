@@ -39,25 +39,33 @@ header img{
    width: 100px;
    height: auto;
 }
- nav{
-    background-color: white;
+nav{
+   grid-area: nav;
+   display: flex;
+   background-color: white;
  }
  nav a{
     text-decoration: none;
     background-color: #036473;
     color: white;
  }
+ main{
+   grid-area: main;
+ }
  section{
+   grid-area: section;
    background-color: white;
  }
  article{
    background-color: #F2FDFF;
  }
  aside {
+   grid-area: aside;
    color: white;
    background-color: #734703;
    
  }
  footer{
+   grid-area: footer;
     background-color: #F2C680;
  }

@@ -144,6 +144,9 @@ footer a:hover {
   aside{
     display: none;
   }
+  header{
+    background-color: #f2c680;
+  }
   nav ul{
     flex-direction: column;
     align-items: center;

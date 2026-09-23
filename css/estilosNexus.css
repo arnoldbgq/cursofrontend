@@ -1,9 +1,9 @@
 /*
 #036473 color principal
-#1F010F oscuros
-#E6F5F7 claros fondos
-#C7BD6B footer
-#998804 color complementario
+#1A0701 oscuros
+#F2FDFF claros fondos
+#F2C680 footer
+#734703 color complementario
 
 selector {
     propiedad: valor;
@@ -13,7 +13,7 @@ selector {
     box-sizing: border-box;
 }
  body {
-    background-color: #E6F5F7;
+    background-color: #F2FDFF;
  }  
 header{
     background-color: white;
@@ -22,5 +22,5 @@ header{
     background-color: white;
  }
  footer{
-    background-color: #C7BD6B;
+    background-color: #F2C680;
  }

@@ -23,7 +23,9 @@ header{
     background-color: white;
  }
  nav a{
-    background-color: #734703;
+    text-decoration: none;
+    background-color: #036473;
+    color: white;
  }
  footer{
     background-color: #F2C680;

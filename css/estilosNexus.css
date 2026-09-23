@@ -27,6 +27,7 @@ selector {
    min-height: 100vh;
  }  
 header{
+   color: #036473;
    grid-area: header;
    display: flex;
    align-items: center;

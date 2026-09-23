@@ -1,0 +1,638 @@
+/* =========================================================
+   1. CONFIGURACIÓN GENERAL
+   ========================================================= */
+
+/*
+   El selector * representa TODOS los elementos HTML.
+
+   box-sizing: border-box;
+   Hace que el ancho y alto de un elemento incluyan
+   también su padding y su borde.
+
+   Esto facilita el cálculo de tamaños.
+*/
+* {
+  box-sizing: border-box;
+}
+
+
+/*
+   BODY
+   ---------------------------------------------------------
+   El body será el CONTENEDOR PRINCIPAL de nuestro diseño.
+
+   display: grid;
+   Convierte el body en un CONTENEDOR GRID.
+
+   A partir de este momento podemos organizar sus
+   elementos utilizando filas, columnas y áreas.
+*/
+body {
+  margin: 0;
+
+  display: grid;
+
+
+  /*
+     grid-template-columns
+     ---------------------
+
+     Define las COLUMNAS que tendrá nuestro Grid.
+
+     Tenemos:
+
+     3fr = columna principal
+     1fr = columna lateral
+
+     "fr" significa "fracción del espacio disponible".
+
+     Por lo tanto:
+
+     ┌──────────────────────────┬──────────┐
+     │                          │          │
+     │        3 partes          │ 1 parte  │
+     │                          │          │
+     └──────────────────────────┴──────────┘
+
+     El contenido principal ocupará aproximadamente
+     75% del espacio y el aside aproximadamente 25%.
+  */
+  grid-template-columns: 3fr 1fr;
+
+
+  /*
+     grid-template-rows
+     ------------------
+
+     Define las FILAS del Grid.
+
+     Tenemos 4 filas:
+
+     1. Header
+     2. Nav
+     3. Main + Aside
+     4. Footer
+
+     auto = el tamaño se adapta al contenido.
+
+     1fr = la fila ocupa el espacio disponible.
+  */
+  grid-template-rows: auto auto 1fr auto;
+
+
+  /*
+     grid-template-areas
+     -------------------
+
+     Esta es una de las partes MÁS IMPORTANTES.
+
+     Aquí dibujamos mediante texto la distribución
+     que tendrá nuestra página.
+
+     "header header"
+     significa que header ocupa las dos columnas.
+
+     "nav nav"
+     significa que nav también ocupa las dos columnas.
+
+     "main aside"
+     significa que main ocupa la primera columna
+     y aside la segunda.
+
+     "footer footer"
+     significa que footer ocupa las dos columnas.
+
+
+     Visualmente:
+
+     ┌───────────────┬───────────┐
+     │    header     │  header   │
+     ├───────────────┴───────────┤
+     │            nav            │
+     ├────────────────┬──────────┤
+     │                │          │
+     │      main      │  aside   │
+     │                │          │
+     ├────────────────┴──────────┤
+     │           footer          │
+     └───────────────────────────┘
+  */
+
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+
+
+  /*
+     min-height: 100vh;
+
+     vh significa "viewport height".
+
+     100vh = 100% de la altura visible de la ventana.
+
+     De esta manera, el body intenta ocupar como mínimo
+     toda la pantalla.
+  */
+  min-height: 100vh;
+}
+
+
+/* =========================================================
+   2. HEADER
+   ========================================================= */
+
+/*
+   grid-area: header;
+
+   Aquí estamos diciendo:
+
+   "Este elemento pertenece al área llamada HEADER".
+
+   El nombre "header" debe coincidir exactamente con
+   uno de los nombres definidos anteriormente en:
+
+   grid-template-areas
+
+   Por ejemplo:
+
+   grid-template-areas:
+     "header header"
+
+   Por eso <header> ocupará esa zona.
+*/
+
+header {
+  grid-area: header;
+
+
+  /*
+     display: flex;
+
+     Convierte el header en un CONTENEDOR FLEXBOX.
+
+     Flexbox sirve principalmente para organizar elementos
+     en una dirección: horizontal o vertical.
+
+     En este caso queremos colocar:
+
+     LOGO     TÍTULO
+
+     uno al lado del otro.
+  */
+  display: flex;
+
+
+  /*
+     align-items
+
+     Alinea los elementos en el eje perpendicular
+     a la dirección principal.
+
+     Como flex utiliza por defecto una dirección horizontal:
+
+     ───────────────────────>
+             eje principal
+
+     align-items: center;
+
+     centra verticalmente los elementos.
+
+     Por ejemplo:
+
+             LOGO
+              │
+       ───────┼───────
+              │
+            TÍTULO
+
+     Ambos quedan alineados verticalmente.
+  */
+  align-items: center;
+
+
+  /*
+     gap
+
+     Define el espacio entre los elementos
+     que están dentro del Flexbox.
+
+     En este caso:
+
+     LOGO    20px    TÍTULO
+  */
+  gap: 20px;
+
+
+  /*
+     Estas propiedades solamente generan espacio interno
+     y color para poder visualizar el diseño.
+  */
+  padding: 20px;
+  background-color: #d9d9d9;
+}
+
+
+/*
+   Controlamos el tamaño de la imagen del logo.
+
+   width modifica el ancho.
+
+   height: auto permite que el navegador mantenga
+   automáticamente la proporción original de la imagen.
+*/
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+
+/*
+   margin: 0 elimina el margen predeterminado
+   que los navegadores aplican normalmente a h1.
+*/
+
+header h1 {
+  margin: 0;
+}
+
+
+/* =========================================================
+   3. NAV
+   ========================================================= */
+
+nav {
+  /*
+     El nav se coloca en el área llamada "nav".
+
+     Esa área fue definida anteriormente:
+
+     "nav nav"
+
+     Por eso ocupa las DOS columnas.
+  */
+  grid-area: nav;
+
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+
+/*
+   El <ul> contiene los elementos del menú.
+
+   display: flex;
+
+   Convierte la lista en un contenedor Flexbox.
+
+   Esto nos permite colocar los <li> horizontalmente.
+*/
+
+nav ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+
+
+  /*
+     justify-content
+
+     Alinea los elementos sobre el EJE PRINCIPAL.
+
+     Como Flexbox trabaja horizontalmente por defecto:
+
+     INICIO | MI PRIMERA | SEGUNDA | TERCERA
+
+     justify-content: center;
+
+     centra todo el menú horizontalmente.
+  */
+  justify-content: center;
+
+
+  /*
+     gap crea una separación entre cada elemento.
+
+     Sin gap:
+
+     Inicio Mi Primera Segunda Tercera
+
+     Con gap:
+
+     Inicio   Mi Primera   Segunda   Tercera
+  */
+  gap: 30px;
+}
+
+
+/*
+   Estilos de los enlaces del menú.
+
+   Estas propiedades son más relacionadas con
+   presentación del texto, por lo que aquí no
+   son importantes para comprender Grid o Flexbox.
+*/
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+
+/*
+   :hover es una PSEUDOCLASE.
+
+   Se activa cuando el usuario coloca el cursor
+   sobre el enlace.
+*/
+
+nav a:hover {
+  color: #555;
+}
+
+
+/* =========================================================
+   4. MAIN
+   ========================================================= */
+
+main {
+
+  /*
+     main pertenece al área "main".
+
+     Recordemos:
+
+     grid-template-areas:
+       "main aside"
+
+     Por lo tanto, main ocupa la primera columna.
+  */
+  grid-area: main;
+
+  padding: 20px;
+  background-color: #eeeeee;
+}
+
+
+/* =========================================================
+   5. SECTION
+   ========================================================= */
+
+section {
+
+  /*
+     height: 100% significa que section intentará
+     ocupar toda la altura disponible de su contenedor.
+  */
+  height: 100%;
+
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+
+/* =========================================================
+   6. ARTICLE
+   ========================================================= */
+
+/*
+   Tenemos tres elementos:
+
+   <article></article>
+   <article></article>
+   <article></article>
+
+   Como no hemos convertido section en Flexbox o Grid,
+   los artículos aparecen uno debajo de otro.
+
+   Esto coincide con nuestro wireframe.
+*/
+
+article {
+
+  /*
+     min-height establece una altura MÍNIMA.
+
+     Si posteriormente agregamos más contenido,
+     el article puede crecer.
+  */
+  min-height: 150px;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background-color: #d9d9d9;
+}
+
+
+/*
+   :last-child
+
+   Selecciona el último article dentro de su contenedor.
+
+   En este caso evitamos que el último artículo
+   tenga un espacio inferior innecesario.
+*/
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   7. ASIDE
+   ========================================================= */
+
+aside {
+
+  /*
+     aside pertenece al área "aside".
+
+     En:
+
+     grid-template-areas:
+       "main aside"
+
+     aside ocupa la segunda columna.
+  */
+  grid-area: aside;
+
+  padding: 20px;
+
+  background-color: #dddddd;
+
+  min-height: 100%;
+}
+
+
+/* =========================================================
+   8. FOOTER
+   ========================================================= */
+
+footer {
+
+  /*
+     footer pertenece al área "footer".
+
+     Como tenemos:
+
+     "footer footer"
+
+     el footer ocupa las dos columnas.
+  */
+  grid-area: footer;
+
+  padding: 20px;
+  background-color: #cccccc;
+}
+
+
+footer h4 {
+  margin-top: 0;
+}
+
+
+/*
+   Nuevamente utilizamos Flexbox.
+
+   Los elementos <li> de la lista se colocarán
+   horizontalmente.
+
+   Blackboard | Mi Repositorio | Página del Instructor | ...
+*/
+
+footer ul {
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+
+  /*
+     Separa los elementos horizontalmente.
+  */
+  gap: 25px;
+}
+
+
+footer a {
+  color: #222;
+  text-decoration: none;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   9. DISEÑO RESPONSIVE
+   ========================================================= */
+
+/*
+   @media
+
+   Permite aplicar reglas CSS dependiendo de las
+   características de la pantalla.
+
+   En este caso:
+
+   max-width: 768px
+
+   significa:
+
+   "Si la pantalla tiene 768px de ancho o menos,
+   aplica estas reglas".
+*/
+
+@media (max-width: 768px) {
+
+  /*
+     En una pantalla pequeña ya no queremos:
+
+     ┌───────────────┬──────────┐
+     │     main      │  aside   │
+     └───────────────┴──────────┘
+
+     porque ambas columnas podrían quedar demasiado
+     estrechas.
+
+     Por eso cambiamos el Grid a UNA SOLA COLUMNA.
+  */
+
+  body {
+
+    grid-template-columns: 1fr;
+
+
+    /*
+       Ahora las áreas se colocan una debajo de otra:
+
+       HEADER
+       NAV
+       MAIN
+       ASIDE
+       FOOTER
+    */
+
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+
+
+  /*
+     También cambiamos el menú.
+
+     flex-direction: column;
+
+     Cambia la dirección del Flexbox.
+
+     Antes:
+
+     Inicio | Mi Primera | Segunda | Tercera
+
+     Ahora:
+
+     Inicio
+     Mi Primera
+     Segunda
+     Tercera
+  */
+
+  nav ul {
+    flex-direction: column;
+
+    /*
+       center centra los elementos en el eje
+       perpendicular al nuevo eje principal.
+    */
+
+    align-items: center;
+
+    gap: 10px;
+  }
+
+
+  /*
+     El footer también cambia su lista a vertical.
+  */
+
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

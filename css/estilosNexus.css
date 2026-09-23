@@ -134,5 +134,11 @@ footer a:hover {
 @media (max-with: 768px){
   body{
     grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
   }
 }

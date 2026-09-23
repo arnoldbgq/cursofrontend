@@ -27,6 +27,12 @@ header{
     background-color: #036473;
     color: white;
  }
+ section{
+   background-color: white;
+ }
+ article{
+   background-color: #F2FDFF;
+ }
  aside {
    background-color: #734703;
  }

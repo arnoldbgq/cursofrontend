@@ -129,3 +129,10 @@ footer a:hover {
   color: #f2c680;
   text-decoration: underline;
 }
+
+
+@media (max-with: 768px){
+  body{
+    grid-template-columns: 1fr;
+  }
+}

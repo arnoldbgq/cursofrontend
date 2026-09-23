@@ -141,4 +141,14 @@ footer a:hover {
     "aside"
     "footer";
   }
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  footer ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+
 }

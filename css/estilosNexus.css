@@ -11,6 +11,7 @@ selector {
 
 * {
     box-sizing: border-box;
+    color: #1A0701;
 }
  body {
     background-color: #F2FDFF;

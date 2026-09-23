@@ -9,7 +9,7 @@ selector {
     propiedad: valor;
 }*/
 
-* {
+*{
     box-sizing: border-box;
     color: #1A0701;
 }
@@ -26,6 +26,9 @@ header{
     text-decoration: none;
     background-color: #036473;
     color: white;
+ }
+ aside {
+   background-color: #734703;
  }
  footer{
     background-color: #F2C680;

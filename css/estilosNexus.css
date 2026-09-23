@@ -41,13 +41,17 @@ header img{
 }
 nav{
    grid-area: nav;
+   padding: 10px;
    display: flex;
    background-color: white;
  }
  nav a{
-    text-decoration: none;
-    background-color: #036473;
-    color: white;
+   margin: 10px;
+   padding: 10px;
+   list-style: none;
+   text-decoration: none;
+   background-color: #036473;
+   color: white;
  }
  main{
    grid-area: main;

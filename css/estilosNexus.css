@@ -31,8 +31,10 @@ header{
    display: flex;
    align-items: center;
    GAP: 20PX;
+   padding: 20px;
    background-color: white;
 }
+header
  nav{
     background-color: white;
  }

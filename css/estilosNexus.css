@@ -21,6 +21,9 @@ header{
  nav{
     background-color: white;
  }
+ nav a{
+    background-color: #734703;
+ }
  footer{
     background-color: #F2C680;
  }

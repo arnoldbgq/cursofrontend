@@ -12,6 +12,7 @@ selector {
 * {
   box-sizing: border-box;
   color: #1a0701;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
   margin: 1px;

@@ -44,10 +44,10 @@ header h1 {
 header img {
   width: 150px;
   height: auto;
+  transition: all 0.9s ease;
 }
 header img:hover {
-  width: 104px;
-  height: auto;
+  transform: scale(1.1);
 }
 nav {
   justify-content: center;

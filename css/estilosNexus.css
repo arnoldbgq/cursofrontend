@@ -49,7 +49,7 @@ header img:hover {
 nav {
   justify-content: center;
   grid-area: nav;
-  padding: 10px;
+  padding: 5px;
   display: flex;
    background-color: #f2fdff;
 }
@@ -58,7 +58,7 @@ nav ul {
 }
 nav a {
   width: 15vw;
-  margin: 10px;
+  margin: 1px;
   padding: 10px;
   list-style: none;
   text-decoration: none;

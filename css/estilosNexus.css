@@ -149,6 +149,7 @@ footer a:hover {
     "main"
     "aside"
     "footer";
+    font-size: 60%;
   }
   aside{
     display: none;
@@ -162,6 +163,9 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+  nav a {
+    width: 80%;
   }
   footer ul{
     flex-direction: column;

@@ -58,8 +58,8 @@ nav ul {
 }
 nav a {
   width: 15vw;
-  margin: 1px;
-  padding: 10px;
+  margin: 8px;
+  padding: 8px;
   list-style: none;
   text-decoration: none;
   background-color: #036473;
@@ -74,6 +74,7 @@ nav ul a li {
   color: white;
 }
 nav a:hover {
+  color: #fbfaf8;
   background-color: #013139;
   margin: 11px;
   padding: 14px;

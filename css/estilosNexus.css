@@ -76,6 +76,7 @@ nav ul a li {
 nav a:hover {
   background-color: #013139;
   margin: 11px;
+  padding: 14px;
   border-radius: 8px;
 }
 main {

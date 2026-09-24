@@ -149,8 +149,9 @@ footer a:hover {
     "main"
     "aside"
     "footer";
-    font-size: 45px;
-  }
+    font-size: 50px;
+    text-align: justify;
+    }
 
 
   header{

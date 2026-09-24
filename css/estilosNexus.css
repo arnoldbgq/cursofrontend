@@ -115,6 +115,8 @@ footer {
   grid-area: footer;
   padding: 20px;
   background-color: #734703;
+  justify-content: center;
+  align-items: center;
 }
 footer h4 {
   justify-content: center;

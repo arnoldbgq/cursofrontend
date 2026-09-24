@@ -29,10 +29,10 @@ body {
 header {
   grid-area: header;
   display: flex;
-  align-items: center;
+  
   gap: 20px;
   padding: 20px;
-  background-color: white;
+  background-color: #f2fdff;
 }
 header h1 {
   color: #036473;

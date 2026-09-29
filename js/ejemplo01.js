@@ -53,3 +53,7 @@ function cambiarMenu(){
     let m4 =document.getElementById("cuarta");
     m4.textContent =  "JavaScript"
 }
+function cambiarLogo(){
+    let logo = document.getElementById("logo");
+    logo.src("https://logos-world.net/wp-content/uploads/2025/01/Senati-Symbol.png")
+}

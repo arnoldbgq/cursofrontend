@@ -6,4 +6,9 @@ function saludar(){
         console.log(suma);
         alert("Bienvenidos")
         alert("ola k ace");
-    }
+}
+function multiplar(){
+    let numero1 = 3;
+    let numero2= 4;
+    alert("producto = "+ numero1*numero2)
+}

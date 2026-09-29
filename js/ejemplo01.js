@@ -22,7 +22,6 @@ function cuenta(){
 }
 funcion edad(){
     let edad=20;
-
     if (edad>=18){
         alert("Es mayor de Edad")
     } 

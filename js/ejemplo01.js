@@ -10,5 +10,5 @@ function saludar(){
 function multiplar(){
     let numero1 = 3;
     let numero2= 4;
-    alert("producto = "+ numero1*numero2)
+    alert("producto = ", numero1*numero2)
 }

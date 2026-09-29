@@ -40,5 +40,15 @@ function buclecito(){
 
 function cambiarTitulo(){
     let titulo = document.getElementById("titulo");
-    titulo.textContent = 
+    titulo.textContent = "Ejemplos JS"
+}
+function cambiarMenu(){
+    let m1 = document.getElementById("primera");
+    m1.textContent = "imagenes"
+    let m2 =document.getElementById("segunda");
+    m2.textContent="listas"
+    let m3 =document.getElementById("tercera");
+    m3.textContent = "tablas"
+    let m4 =document.getElementById("cuarta");
+    m4.textContent =  "JavaScript"
 }

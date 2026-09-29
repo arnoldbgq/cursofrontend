@@ -20,7 +20,7 @@ function cuenta(){
     let cuota = total/amigos;
     alert("la cuenta es de S/."+total+" entre "+amigos+" amigos se dividira en S/."+cuota+" por persona." )
 }
-funcion edad(){
+funcion mayor(){
     let edad=20;
     if (edad>=18){
         alert("Es mayor de Edad")

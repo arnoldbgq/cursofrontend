@@ -20,15 +20,16 @@ function cuenta(){
     let cuota = total/amigos;
     alert("la cuenta es de S/."+total+" entre "+amigos+" amigos se dividira en S/."+cuota+" por persona." )
 }
-funcion mayor(){
+function mayor(){
     let edad=20;
     if (edad>=18){
         alert("Es mayor de Edad")
     } 
 }
-funcion buclecito(){
+function buclecito(){
     let i = 0;
     while (i<=14){
         alert("Iteración: "+ i)
+
     } 
 }

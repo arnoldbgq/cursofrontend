@@ -26,6 +26,10 @@ funcion edad(){
     if (edad>=18){
         alert("Es mayor de Edad")
     } 
-
-
+}
+funcion buclecito(){
+    let i = 0;
+    while (i<=14){
+        alert("Iteración: "+ i)
+    } 
 }

@@ -29,7 +29,11 @@ function mayor(){
 function buclecito(){
     let i = 0;
     while (i<=14){
-        alert("Iteración: "+ i)
+        console.log("Iteración: "+ i)
         i++; 
     } 
+
+    for(let j=0;j<=4;i++){
+        alert("Alerta de Bucle For: "+j)
+    }
 }

@@ -37,3 +37,8 @@ function buclecito(){
         alert("Alerta de Bucle For: "+j)
     }
 }
+
+function cambiarTitulo(){
+    let titulo = document.getElementById("titulo");
+    titulo.textContent = 
+}

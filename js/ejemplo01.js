@@ -7,7 +7,7 @@ function saludar(){
         alert("Bienvenidos")
         alert("ola k ace");
 }
-function multiplar(){
+function multiplicar(){
     let numero1 = 3;
     let numero2= 4;
     alert("producto = ", numero1*numero2)

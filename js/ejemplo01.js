@@ -30,6 +30,6 @@ function buclecito(){
     let i = 0;
     while (i<=14){
         alert("Iteración: "+ i)
-
+        i++; 
     } 
 }

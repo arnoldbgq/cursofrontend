@@ -13,3 +13,10 @@ function multiplicar(){
     let m = numero1*numero2
     alert("producto = "+ m)
 }
+
+function cuenta(){
+    let total=100;
+    let amigos = 4;
+    let cuota = total/amigos;
+    alert("la cuenta es de S/."+total+" entre "+amigos+" amigos se dividita en S/."+cuota+" por persona." )
+}

@@ -33,7 +33,7 @@ function buclecito(){
         i++; 
     } 
 
-    for(let j=0;j<=4;i++){
+    for(let j=0;j<=4;j++){
         alert("Alerta de Bucle For: "+j)
     }
 }

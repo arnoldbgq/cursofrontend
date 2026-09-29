@@ -56,6 +56,8 @@ function cambiarMenu(){
 function cambiarLogo(){
     let logo = document.getElementById("logo");
     logo.src= "https://logos-world.net/wp-content/uploads/2025/01/Senati-Symbol.png";
+}
+
 function sad(){
     let carita = doc.getElementById("carita");
     carita.src="https://static.vecteezy.com/system/resources/thumbnails/018/931/547/small_2x/sad-face-of-emoticons-png.png";

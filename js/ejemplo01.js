@@ -41,6 +41,7 @@ function buclecito(){
 function cambiarTitulo(){
     let titulo = document.getElementById("titulo");
     titulo.textContent = "Ejemplos JS"
+    titulo.style.color ="red";
 }
 function cambiarMenu(){
     let m1 = document.getElementById("primera");

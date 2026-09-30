@@ -2,8 +2,8 @@ alert("Practicando JS");
 
 function ejemplo01() {
   //Entradas
-    let precio1 = prompt("Ingrese Precio 1: "),
-      precio2 = prompt("Ingrese Precio 2: "),
+  let precio1 = prompt("Ingrese Precio 1: "),
+    precio2 = prompt("Ingrese Precio 2: "),
     precio3 = prompt("Ingrese Precio 3: ");
   let cantidad1 = prompt("Ingrese Cantidad 1: "),
     cantidad2 = prompt("Ingrese Cantidad 1: "),
@@ -23,4 +23,13 @@ function ejemplo01() {
 function Pnombre() {
   let nombre = prompt("Como te llamas?");
   alert("Hola, " + nombre);
+}
+
+function taxi() {
+  //entradas
+  let km = prompt("Ingrese los kilometros recorridos: ");
+  //proceso
+  let total = 10 + km * 3;
+  //salida
+  alert("El total de la carrera de " + km + "km a pagar seria de S/." + total);
 }

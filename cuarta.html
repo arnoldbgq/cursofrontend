@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Ejemplos JS</title>
-    <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="css/estiloSenati.css">
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/estiloSenati.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <script src="js/ejemplo01.js"></script>
-
+    <script src="js/practicandoJS.js"></script>
   </head>
   <body>
     <!--ESTO ES UN COMENTARIO-->
@@ -27,7 +27,7 @@
         <a href="index.html"><li>Inicio</li></a>
         <a href="miPaginaWeb.html"><li id="primera">Mi Primera pagina</li></a>
         <a href="segunda.html"><li id="segunda">Segunda Pagina</li></a>
-        <a href="tercera.html"><li id="tercera" >Tercera pagina Web</li></a>
+        <a href="tercera.html"><li id="tercera">Tercera pagina Web</li></a>
         <a href="cuarta.html"><li id="cuarta">Cuarta Pagina web</li></a>
         <a href="paginaenconstruccion.html"><li>Quinta Página Web</li></a>
       </ul>
@@ -36,34 +36,52 @@
       <section>
         <article>
           <button class="btn btn-info" onclick="saludar()">Haz Clic</button>
-          <button class="btn btn-danger" onclick="multiplicar()">multiplicar</button>
+          <button class="btn btn-danger" onclick="multiplicar()">
+            multiplicar
+          </button>
           <button class="btn btn-primary" onclick="cuenta()">boton 1</button>
-          <button class="btn btn-outline-success" onclick="mayor()">boton 2</button>
+          <button class="btn btn-outline-success" onclick="mayor()">
+            boton 2
+          </button>
           <button class="btn btn-warning" onclick="buclecito()">boton 3</button>
-         </article>
-        <article>
-          <button class="btn btn-outline-warning" onclick="cambiarTitulo()">Cambiar Titulo</button>
-          <button class="btn btn-outline-danger" onclick="cambiarMenu()">Cambiar Menu</button>
-          <button class="btn btn-outline-primary" onclick="cambiarLogo()">Cambiar logo</button>
         </article>
-        <article></article>
+        <article>
+          <button class="btn btn-outline-warning" onclick="cambiarTitulo()">
+            Cambiar Titulo
+          </button>
+          <button class="btn btn-outline-danger" onclick="cambiarMenu()">
+            Cambiar Menu
+          </button>
+          <button class="btn btn-outline-primary" onclick="cambiarLogo()">
+            Cambiar logo
+          </button>
+        </article>
+        <article>
+          <button onclick="Pnombre()">saludar</button>
+          <button onclick="ejemplo01()">Ejecutar el ejemplo 01</button>
+        </article>
       </section>
     </main>
     <aside>
-       <div class="card" style="width: 18rem">
-            <img src="images/atm.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Atletico de Madrid</h5>
-              <p class="card-text">
-                Este es un equipo de futbol de España que no va a soltar a
-                Julian Alvarez.
-              </p>
-              <a href="index.html" class="btn btn-primary">Volver Inicio</a>
-            </div>
-          </div>
-        <br>
-       <div class="card" style="width: 18rem">
-        <img id="carita" src="https://media.istockphoto.com/id/689364180/es/vector/sonriente-icono-de-emoci%C3%B3n-de-personas-positivas-de-cara-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=WmsDAjUpqWkPR7eGixUhWjfnC1_jcyEaUiB5h1nEWVc=" class="card-img-top" alt="..." />
+      <div class="card" style="width: 18rem">
+        <img src="images/atm.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Atletico de Madrid</h5>
+          <p class="card-text">
+            Este es un equipo de futbol de España que no va a soltar a Julian
+            Alvarez.
+          </p>
+          <a href="index.html" class="btn btn-primary">Volver Inicio</a>
+        </div>
+      </div>
+      <br />
+      <div class="card" style="width: 18rem">
+        <img
+          id="carita"
+          src="https://media.istockphoto.com/id/689364180/es/vector/sonriente-icono-de-emoci%C3%B3n-de-personas-positivas-de-cara-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=WmsDAjUpqWkPR7eGixUhWjfnC1_jcyEaUiB5h1nEWVc="
+          class="card-img-top"
+          alt="..."
+        />
         <div class="card-body">
           <h5 class="card-title">Estado de Animo</h5>
           <p class="card-text">
@@ -83,10 +101,25 @@
           >
         </li>
         <li><a href="#" target="_blank">Mi Repositorio</a></li>
-        <li><a href="https://arnoldbgq.github.io/cursofrontend/">Pagina del Instructor</a></li>
-        <li><a href="https://github.com/arnoldbgq/cursofrontend/tree/main" target="_blank">Repositorio del Instructor</a></li>
-         <li><a href="https://startbootstrap.com/?showPro=false&showAngular=false&showVue=false" target="_blank">Plantillas de Boostrap</a></li>
-
+        <li>
+          <a href="https://arnoldbgq.github.io/cursofrontend/"
+            >Pagina del Instructor</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/arnoldbgq/cursofrontend/tree/main"
+            target="_blank"
+            >Repositorio del Instructor</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://startbootstrap.com/?showPro=false&showAngular=false&showVue=false"
+            target="_blank"
+            >Plantillas de Boostrap</a
+          >
+        </li>
       </ul>
     </footer>
   </body>

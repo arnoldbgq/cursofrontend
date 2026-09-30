@@ -29,7 +29,7 @@ function cuenta() {
   );
 }
 function mayor() {
-  let edad = 20;
+ let edad = prompt("Ingresa tu edad: ");
   if (edad >= 18) {
     alert("Es mayor de Edad");
   }

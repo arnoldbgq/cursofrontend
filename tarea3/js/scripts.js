@@ -7,6 +7,7 @@
 // Use this file to add JavaScript to your project
 
 alert("la tarea esta hecha");
+
 function ejercio01()(){
     alert("Ejercicio 02: Tasa de cambio:");
 }

@@ -4,6 +4,6 @@ function formu(){
     console.log(nombre);
 
     let salida = document.getElementById("salida");
-    salida.textContent("hola"+ nombre);
+    salida.textContent(nombre);
 
 }

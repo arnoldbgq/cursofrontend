@@ -52,14 +52,15 @@ function cambiarTitulo() {
   titulo.style.color = "red";
 }
 function cambiarMenu() {
-  let m1 = document.getElementById("primera");
+  let m1 = document.getElementById("m1");
   m1.textContent = "imagenes";
-  let m2 = document.getElementById("segunda");
+  let m2 = document.getElementById("m2");
   m2.textContent = "listas";
-  let m3 = document.getElementById("tercera");
+  let m3 = document.getElementById("m3");
   m3.textContent = "tablas";
-  let m4 = document.getElementById("cuarta");
+  let m4 = document.getElementById("m4");
   m4.textContent = "JavaScript";
+  let m5 = document.getElementById("m5")
 }
 function cambiarLogo() {
   let logo = document.getElementById("logo");

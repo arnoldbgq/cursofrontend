@@ -1,8 +1,9 @@
 
 function formu(){
     let nombre = document.getElementById("nombre").value;
-console.log(nombre);
+    console.log(nombre);
 
-let salida = document.getElementById("salida");
+    let salida = document.getElementById("salida");
+    salida.textContent("hola"+ nombre);
 
 }

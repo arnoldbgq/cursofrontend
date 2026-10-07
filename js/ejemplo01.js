@@ -1,51 +1,79 @@
-alert("Practicando JS");
-
-function ejemplo01() {
-  //Entradas
-  let precio1 = prompt("Ingrese Precio 1: "),
-    precio2 = prompt("Ingrese Precio 2: "),
-    precio3 = prompt("Ingrese Precio 3: ");
-  let cantidad1 = prompt("Ingrese Cantidad 1: "),
-    cantidad2 = prompt("Ingrese Cantidad 1: "),
-    cantidad3 = prompt("Ingrese Cantidad 1: ");
-  //Proceso
-  let subTotal =
-    precio1 * cantidad1 + precio2 * cantidad2 + precio3 * cantidad3;
-  alert("su subtotal a pagar es de $" + subTotal);
-  if (subTotal > 100) {
-    total = subTotal * 0.95;
-    alert("usted tiene un descuento por que compro mas de $100");
-  } else {
-    total = subTotal;
-  } //Salida
-  alert("El total a pagar sera de $" + total);
+function saludar() {
+  console.log("hola mundo");
+  let a = 10;
+  let b = 5;
+  let suma = a + b;
+  console.log(suma);
+  alert("Bienvenidos");
+  alert("ola k ace");
 }
-function Pnombre() {
-  let nombre = prompt("Como te llamas?");
-  alert("Hola, " + nombre);
+function multiplicar() {
+  let numero1 = 3;
+  let numero2 = 4;
+  let m = numero1 * numero2;
+  alert("producto = " + m);
 }
 
-function taxi() {
-  //entradas
-  let km = prompt("Ingrese los kilometros recorridos: ");
-  //proceso
-  let total = 10 + km * 3;
-  //salida
-  alert("El total de la carrera de " + km + "km a pagar seria de S/." + total);
+function cuenta() {
+  let total = 100;
+  let amigos = 4;
+  let cuota = total / amigos;
+  alert(
+    "la cuenta es de S/." +
+      total +
+      " entre " +
+      amigos +
+      " amigos se dividira en S/." +
+      cuota +
+      " por persona.",
+  );
 }
-
-function promedio() {
-  alert("Vamos a calcular el promedio de un numero de notas.");
-  //entradas
-  let notas = prompt("Ingrese cuantas notas calculará: ");
-  let total = 0;
-  for (let i = 1; i <= notas; i++) {
-    let nota = Number(prompt("Ingrese nota " + i + ": "));
-    console.log(nota);
-    //proceso
-    total = total + nota;
-    console.log(total);
+function mayor() {
+  let edad = 20;
+  if (edad >= 18) {
+    alert("Es mayor de Edad");
   }
-  let prome = total / notas;
-  alert("El promedio de esas " + notas + " es :" + prome);
+}
+function buclecito() {
+  let i = 0;
+  while (i <= 14) {
+    console.log("Iteración: " + i);
+    i++;
+  }
+
+  for (let j = 0; j <= 4; j++) {
+    alert("Alerta de Bucle For: " + j);
+  }
+}
+
+function cambiarTitulo() {
+  let titulo = document.getElementById("titulo");
+  titulo.textContent = "Ejemplos JS";
+  titulo.style.color = "red";
+}
+function cambiarMenu() {
+  let m1 = document.getElementById("primera");
+  m1.textContent = "imagenes";
+  let m2 = document.getElementById("segunda");
+  m2.textContent = "listas";
+  let m3 = document.getElementById("tercera");
+  m3.textContent = "tablas";
+  let m4 = document.getElementById("cuarta");
+  m4.textContent = "JavaScript";
+}
+function cambiarLogo() {
+  let logo = document.getElementById("logo");
+  logo.src =
+    "https://logos-world.net/wp-content/uploads/2025/01/Senati-Symbol.png";
+}
+
+function sad() {
+  let carita = document.getElementById("carita");
+  carita.src =
+    "https://static.vecteezy.com/system/resources/thumbnails/018/931/547/small_2x/sad-face-of-emoticons-png.png";
+}
+function happy() {
+  let carita = document.getElementById("carita");
+  carita.src =
+    "https://media.istockphoto.com/id/689364180/es/vector/sonriente-icono-de-emoci%C3%B3n-de-personas-positivas-de-cara-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=WmsDAjUpqWkPR7eGixUhWjfnC1_jcyEaUiB5h1nEWVc=";
 }

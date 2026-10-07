@@ -86,10 +86,10 @@ nav ul {
 }
 
 nav a {
-  width: 15vw;
+  width: 13vw;
 
-  margin: 8px;
-  padding: 8px;
+  margin: 5px;
+  padding: 5px;
 
   list-style: none;
   text-decoration: none;
@@ -97,7 +97,7 @@ nav a {
   background-color: #003b70;
 
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
